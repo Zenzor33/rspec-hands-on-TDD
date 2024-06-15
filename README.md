@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Book specific modifications:
 
-Things you may want to cover:
+- spec_helper.rb
 
-* Ruby version
+* require 'factory_bot_rails' #pasted from book
+* config.include FactoryBot::Syntax::Methods # pasted from book
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* The config.include allows FactoryBot's methods (like create, build, attributes_for, etc.) directly in your tests without needing to prefix them with FactoryBot.
+* eg: user = create(:user) instead of user = FactoryBot.create(:user)
