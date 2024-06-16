@@ -59,6 +59,8 @@ end
 
 group :test do
   gem 'shoulda-matchers', '~> 6.0'
+  gem 'capybara'
+  gem 'webdrivers', '~> 5.3', '>= 5.3.1' # alternative to selenium-webdriver 
 end
 
 group :development do
