@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'page/:slug',
+      to: 'pages#show',
+      slug: /[-a-z0-9+]*/,
+      as: :page
 
-  # Defines the root path route ("/")
   root "home#index"
 end

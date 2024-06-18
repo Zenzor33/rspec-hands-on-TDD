@@ -75,3 +75,4 @@ group :development do
 end
 
 gem 'factory_bot_rails', '~> 6.4', '>= 6.4.3'
+gem 'bootstrap'
