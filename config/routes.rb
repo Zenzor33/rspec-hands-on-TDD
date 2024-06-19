@@ -5,4 +5,6 @@ Rails.application.routes.draw do
       as: :page
 
   root "home#index"
+   get 'search/:year/:month', to: 'search#index', year: /\d{4}/, month: /\d{2}/
+  get 'search', to: 'search#index'
 end

@@ -8,6 +8,6 @@ RSpec.describe 'home/index', type: :view do
     render
     expect(rendered).to have_css('h2', text: page.title)
     expect(rendered).to have_css('p', text: page.created_at.to_fs)
-    expect(rendered).to include(page.content)
+    expect(rendered).to include(page.summary)
   end
 end
