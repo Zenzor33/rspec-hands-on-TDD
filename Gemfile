@@ -76,3 +76,4 @@ end
 
 gem 'factory_bot_rails', '~> 6.4', '>= 6.4.3'
 gem 'bootstrap'
+gem "bcrypt", "~> 3.1"
